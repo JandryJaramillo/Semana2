@@ -4,15 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#93E9F4"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Mi primera app en Android"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Aceptar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tv01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Mensaje 1"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn01"
+        app:layout_constraintStart_toStartOf="@+id/btn01"
+        app:layout_constraintTop_toBottomOf="@+id/btn01" />
+
+    <Button
+        android:id="@+id/bt02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="-->"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv01"
+        app:layout_constraintStart_toStartOf="@+id/tv01"
+        app:layout_constraintTop_toBottomOf="@+id/tv01" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
